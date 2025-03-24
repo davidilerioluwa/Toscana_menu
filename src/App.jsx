@@ -54,7 +54,7 @@ const [print,setPrint]=React.useState(false)
    }}
     className="text-sm h-fit cursor-pointer pt-2"
    >
-download
+Download
    </button>
   </div>
 </div>
