@@ -41,7 +41,19 @@ const [print,setPrint]=React.useState(false)
       handlePrint()
     }, 100);
    }} className="text-sm h-fit cursor-pointer">Download</span> */}
-   <a href="TOSCANA.pdf" className="text-sm h-fit cursor-pointer pt-2" download={"TOSCANA.pdf"}>Download</a>
+   {/* <a href="TOSCANA.pdf" className="text-sm h-fit cursor-pointer pt-2" download={"TOSCANA.pdf"}>Download</a> */}
+   <button onClick={(e)=>{
+    e.preventDefault()
+      const pdfUrl = "TOSCANA.pdf";
+      const link = document.createElement("a");
+      link.href = pdfUrl;
+      link.download = "TOSCANA.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link)
+   }}>
+download
+   </button>
   </div>
 </div>
     </div>
