@@ -1,0 +1,12 @@
+@media print {
+    .no-print { display: none !important; }
+    .print-container { 
+        width: 210mm;  /* A4 width */
+            height: 297mm; /* A4 height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+        page-break-inside: avoid; }
+    .page-break { page-break-after: always; }
+  }
