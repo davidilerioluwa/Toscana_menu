@@ -11,7 +11,7 @@ const [scale,setScale]=React.useState(1)
 const [print,setPrint]=React.useState(false)
   return (
     <div className="bg-stone-900">
-     <div className={`flex flex-col ${print?"":"gap-4"} p-4`} ref={componentRef} style={{transform:`scale(${scale})`}}>
+     <div className={`flex flex-col ${print?"":"gap-2"} p-4`} ref={componentRef} style={{transform:`scale(${scale})`}}>
    <div className="print-container drop-shadow-lg">
      <img src="T1.png"/>
    </div>
@@ -41,7 +41,7 @@ const [print,setPrint]=React.useState(false)
       handlePrint()
     }, 100);
    }} className="text-sm h-fit cursor-pointer">Download</span> */}
-   <a href="/" className="text-sm h-fit cursor-pointer pt-2" download={"TOSCANA.pdf"}>Download</a>
+   <a href="/TOSCANA.pdf" className="text-sm h-fit cursor-pointer pt-2" download={"TOSCANA.pdf"}>Download</a>
   </div>
 </div>
     </div>
