@@ -51,7 +51,9 @@ const [print,setPrint]=React.useState(false)
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link)
-   }}>
+   }}
+    className="text-sm h-fit cursor-pointer pt-2"
+   >
 download
    </button>
   </div>
