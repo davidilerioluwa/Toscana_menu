@@ -20,18 +20,18 @@ const [print,setPrint]=React.useState(false)
     <div className="bg-stone-900">
      <div className={`flex w-full items-center flex-col ${print?"":"gap-2"} p-4`} ref={componentRef} style={{transform:`scale(${scale})`}}>
    <div className="print-container drop-shadow-lg">
-     <img src="1.jpg"/>
+     <img src="1.jpg" className="rounded-xl"/>
    
    </div>
    <div className="page-break"></div>
 
    <div className="print-container drop-shadow-lg">
-     <img src="2.jpg"/>
+     <img src="2.jpg" className="rounded-xl"/>
    </div>
    <div className="page-break"></div>
 
    <div className="print-container drop-shadow-lg">
-     <img src="3.jpg"/>
+     <img src="3.jpg" className="rounded-xl"/>
  </div>
  </div>
 <div className="fixed bottom-20 left-0 flex justify-center items-center w-screen">
