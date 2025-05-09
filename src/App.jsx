@@ -18,7 +18,7 @@ const [scale,setScale]=React.useState(1)
 const [print,setPrint]=React.useState(false)
   return (
     <div className="bg-stone-900">
-     <div className={`flex flex-col ${print?"":"gap-2"} p-4`} ref={componentRef} style={{transform:`scale(${scale})`}}>
+     <div className={`flex w-full items-center flex-col ${print?"":"gap-2"} p-4`} ref={componentRef} style={{transform:`scale(${scale})`}}>
    <div className="print-container drop-shadow-lg">
      <img src="1.jpg"/>
    
